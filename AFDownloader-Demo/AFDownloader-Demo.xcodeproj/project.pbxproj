@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCEE05CB2238E0CC00BBB323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE05CA2238E0CC00BBB323 /* AppDelegate.swift */; };
+		DCEE05CD2238E0CC00BBB323 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE05CC2238E0CC00BBB323 /* ViewController.swift */; };
+		DCEE05D02238E0CD00BBB323 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCEE05CE2238E0CD00BBB323 /* Main.storyboard */; };
+		DCEE05D22238E0CF00BBB323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCEE05D12238E0CF00BBB323 /* Assets.xcassets */; };
+		DCEE05D52238E0CF00BBB323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCEE05D32238E0CF00BBB323 /* LaunchScreen.storyboard */; };
+		DCEE05E02238E0CF00BBB323 /* AFDownloader_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE05DF2238E0CF00BBB323 /* AFDownloader_DemoTests.swift */; };
+		DCEE05EB2238E0CF00BBB323 /* AFDownloader_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE05EA2238E0CF00BBB323 /* AFDownloader_DemoUITests.swift */; };
+		DCEE06062238E9BB00BBB323 /* libAFDownloader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEE06052238E9BB00BBB323 /* libAFDownloader.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCEE05DC2238E0CF00BBB323 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCEE05BF2238E0CC00BBB323 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCEE05C62238E0CC00BBB323;
+			remoteInfo = "AFDownloader-Demo";
+		};
+		DCEE05E72238E0CF00BBB323 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCEE05BF2238E0CC00BBB323 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCEE05C62238E0CC00BBB323;
+			remoteInfo = "AFDownloader-Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DCEE05C72238E0CC00BBB323 /* AFDownloader-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AFDownloader-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCEE05CA2238E0CC00BBB323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DCEE05CC2238E0CC00BBB323 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DCEE05CF2238E0CD00BBB323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCEE05D12238E0CF00BBB323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCEE05D42238E0CF00BBB323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DCEE05D62238E0CF00BBB323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCEE05DB2238E0CF00BBB323 /* AFDownloader-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AFDownloader-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCEE05DF2238E0CF00BBB323 /* AFDownloader_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFDownloader_DemoTests.swift; sourceTree = "<group>"; };
+		DCEE05E12238E0CF00BBB323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCEE05E62238E0CF00BBB323 /* AFDownloader-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AFDownloader-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCEE05EA2238E0CF00BBB323 /* AFDownloader_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFDownloader_DemoUITests.swift; sourceTree = "<group>"; };
+		DCEE05EC2238E0CF00BBB323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCEE06052238E9BB00BBB323 /* libAFDownloader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFDownloader.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCEE05C42238E0CC00BBB323 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCEE06062238E9BB00BBB323 /* libAFDownloader.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCEE05D82238E0CF00BBB323 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCEE05E32238E0CF00BBB323 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCEE05BE2238E0CC00BBB323 = {
+			isa = PBXGroup;
+			children = (
+				DCEE05C92238E0CC00BBB323 /* AFDownloader-Demo */,
+				DCEE05DE2238E0CF00BBB323 /* AFDownloader-DemoTests */,
+				DCEE05E92238E0CF00BBB323 /* AFDownloader-DemoUITests */,
+				DCEE05C82238E0CC00BBB323 /* Products */,
+				DCEE06042238E9BB00BBB323 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DCEE05C82238E0CC00BBB323 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCEE05C72238E0CC00BBB323 /* AFDownloader-Demo.app */,
+				DCEE05DB2238E0CF00BBB323 /* AFDownloader-DemoTests.xctest */,
+				DCEE05E62238E0CF00BBB323 /* AFDownloader-DemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCEE05C92238E0CC00BBB323 /* AFDownloader-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				DCEE05CA2238E0CC00BBB323 /* AppDelegate.swift */,
+				DCEE05CC2238E0CC00BBB323 /* ViewController.swift */,
+				DCEE05CE2238E0CD00BBB323 /* Main.storyboard */,
+				DCEE05D12238E0CF00BBB323 /* Assets.xcassets */,
+				DCEE05D32238E0CF00BBB323 /* LaunchScreen.storyboard */,
+				DCEE05D62238E0CF00BBB323 /* Info.plist */,
+			);
+			path = "AFDownloader-Demo";
+			sourceTree = "<group>";
+		};
+		DCEE05DE2238E0CF00BBB323 /* AFDownloader-DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCEE05DF2238E0CF00BBB323 /* AFDownloader_DemoTests.swift */,
+				DCEE05E12238E0CF00BBB323 /* Info.plist */,
+			);
+			path = "AFDownloader-DemoTests";
+			sourceTree = "<group>";
+		};
+		DCEE05E92238E0CF00BBB323 /* AFDownloader-DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DCEE05EA2238E0CF00BBB323 /* AFDownloader_DemoUITests.swift */,
+				DCEE05EC2238E0CF00BBB323 /* Info.plist */,
+			);
+			path = "AFDownloader-DemoUITests";
+			sourceTree = "<group>";
+		};
+		DCEE06042238E9BB00BBB323 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCEE06052238E9BB00BBB323 /* libAFDownloader.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCEE05C62238E0CC00BBB323 /* AFDownloader-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCEE05EF2238E0CF00BBB323 /* Build configuration list for PBXNativeTarget "AFDownloader-Demo" */;
+			buildPhases = (
+				DCEE05C32238E0CC00BBB323 /* Sources */,
+				DCEE05C42238E0CC00BBB323 /* Frameworks */,
+				DCEE05C52238E0CC00BBB323 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AFDownloader-Demo";
+			productName = "AFDownloader-Demo";
+			productReference = DCEE05C72238E0CC00BBB323 /* AFDownloader-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCEE05DA2238E0CF00BBB323 /* AFDownloader-DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCEE05F22238E0CF00BBB323 /* Build configuration list for PBXNativeTarget "AFDownloader-DemoTests" */;
+			buildPhases = (
+				DCEE05D72238E0CF00BBB323 /* Sources */,
+				DCEE05D82238E0CF00BBB323 /* Frameworks */,
+				DCEE05D92238E0CF00BBB323 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCEE05DD2238E0CF00BBB323 /* PBXTargetDependency */,
+			);
+			name = "AFDownloader-DemoTests";
+			productName = "AFDownloader-DemoTests";
+			productReference = DCEE05DB2238E0CF00BBB323 /* AFDownloader-DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DCEE05E52238E0CF00BBB323 /* AFDownloader-DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCEE05F52238E0CF00BBB323 /* Build configuration list for PBXNativeTarget "AFDownloader-DemoUITests" */;
+			buildPhases = (
+				DCEE05E22238E0CF00BBB323 /* Sources */,
+				DCEE05E32238E0CF00BBB323 /* Frameworks */,
+				DCEE05E42238E0CF00BBB323 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCEE05E82238E0CF00BBB323 /* PBXTargetDependency */,
+			);
+			name = "AFDownloader-DemoUITests";
+			productName = "AFDownloader-DemoUITests";
+			productReference = DCEE05E62238E0CF00BBB323 /* AFDownloader-DemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCEE05BF2238E0CC00BBB323 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Arun Jose";
+				TargetAttributes = {
+					DCEE05C62238E0CC00BBB323 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					DCEE05DA2238E0CF00BBB323 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = DCEE05C62238E0CC00BBB323;
+					};
+					DCEE05E52238E0CF00BBB323 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = DCEE05C62238E0CC00BBB323;
+					};
+				};
+			};
+			buildConfigurationList = DCEE05C22238E0CC00BBB323 /* Build configuration list for PBXProject "AFDownloader-Demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCEE05BE2238E0CC00BBB323;
+			productRefGroup = DCEE05C82238E0CC00BBB323 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCEE05C62238E0CC00BBB323 /* AFDownloader-Demo */,
+				DCEE05DA2238E0CF00BBB323 /* AFDownloader-DemoTests */,
+				DCEE05E52238E0CF00BBB323 /* AFDownloader-DemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCEE05C52238E0CC00BBB323 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCEE05D52238E0CF00BBB323 /* LaunchScreen.storyboard in Resources */,
+				DCEE05D22238E0CF00BBB323 /* Assets.xcassets in Resources */,
+				DCEE05D02238E0CD00BBB323 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCEE05D92238E0CF00BBB323 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCEE05E42238E0CF00BBB323 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCEE05C32238E0CC00BBB323 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCEE05CD2238E0CC00BBB323 /* ViewController.swift in Sources */,
+				DCEE05CB2238E0CC00BBB323 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCEE05D72238E0CF00BBB323 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCEE05E02238E0CF00BBB323 /* AFDownloader_DemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCEE05E22238E0CF00BBB323 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCEE05EB2238E0CF00BBB323 /* AFDownloader_DemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCEE05DD2238E0CF00BBB323 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCEE05C62238E0CC00BBB323 /* AFDownloader-Demo */;
+			targetProxy = DCEE05DC2238E0CF00BBB323 /* PBXContainerItemProxy */;
+		};
+		DCEE05E82238E0CF00BBB323 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCEE05C62238E0CC00BBB323 /* AFDownloader-Demo */;
+			targetProxy = DCEE05E72238E0CF00BBB323 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DCEE05CE2238E0CD00BBB323 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCEE05CF2238E0CD00BBB323 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DCEE05D32238E0CF00BBB323 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCEE05D42238E0CF00BBB323 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCEE05ED2238E0CF00BBB323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DCEE05EE2238E0CF00BBB323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCEE05F02238E0CF00BBB323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "AFDownloader-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arun.AFDownloader-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCEE05F12238E0CF00BBB323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "AFDownloader-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arun.AFDownloader-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DCEE05F32238E0CF00BBB323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "AFDownloader-DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arun.AFDownloader-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AFDownloader-Demo.app/AFDownloader-Demo";
+			};
+			name = Debug;
+		};
+		DCEE05F42238E0CF00BBB323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "AFDownloader-DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arun.AFDownloader-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AFDownloader-Demo.app/AFDownloader-Demo";
+			};
+			name = Release;
+		};
+		DCEE05F62238E0CF00BBB323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "AFDownloader-DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arun.AFDownloader-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AFDownloader-Demo";
+			};
+			name = Debug;
+		};
+		DCEE05F72238E0CF00BBB323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "AFDownloader-DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arun.AFDownloader-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AFDownloader-Demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCEE05C22238E0CC00BBB323 /* Build configuration list for PBXProject "AFDownloader-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCEE05ED2238E0CF00BBB323 /* Debug */,
+				DCEE05EE2238E0CF00BBB323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCEE05EF2238E0CF00BBB323 /* Build configuration list for PBXNativeTarget "AFDownloader-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCEE05F02238E0CF00BBB323 /* Debug */,
+				DCEE05F12238E0CF00BBB323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCEE05F22238E0CF00BBB323 /* Build configuration list for PBXNativeTarget "AFDownloader-DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCEE05F32238E0CF00BBB323 /* Debug */,
+				DCEE05F42238E0CF00BBB323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCEE05F52238E0CF00BBB323 /* Build configuration list for PBXNativeTarget "AFDownloader-DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCEE05F62238E0CF00BBB323 /* Debug */,
+				DCEE05F72238E0CF00BBB323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCEE05BF2238E0CC00BBB323 /* Project object */;
+}

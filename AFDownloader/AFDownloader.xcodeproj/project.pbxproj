@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		DCD3C82F2232E5D9005CC6AD /* AFDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3C82E2232E5D9005CC6AD /* AFDownloader.swift */; };
+		DCEE05B82237F06500BBB323 /* AFSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE05B72237F06500BBB323 /* AFSession.swift */; };
+		DCEE05BA22380C0400BBB323 /* AFRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE05B922380C0400BBB323 /* AFRequest.swift */; };
+		DCEE05BC2238121000BBB323 /* AFResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE05BB2238121000BBB323 /* AFResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,10 @@
 /* Begin PBXFileReference section */
 		DCD3C82B2232E5D9005CC6AD /* libAFDownloader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFDownloader.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD3C82E2232E5D9005CC6AD /* AFDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFDownloader.swift; sourceTree = "<group>"; };
+		DCEE05B72237F06500BBB323 /* AFSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFSession.swift; sourceTree = "<group>"; };
+		DCEE05B922380C0400BBB323 /* AFRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFRequest.swift; sourceTree = "<group>"; };
+		DCEE05BB2238121000BBB323 /* AFResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFResponse.swift; sourceTree = "<group>"; };
+		DCEE05F82238E0F000BBB323 /* AFDownloader-Demo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "AFDownloader-Demo.xcodeproj"; path = "/Users/arunjose/Documents/AFDownloader/AFDownloader-Demo/AFDownloader-Demo.xcodeproj"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,11 +45,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC9B19DC223560AB00EF3EF2 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				DCD3C82E2232E5D9005CC6AD /* AFDownloader.swift */,
+				DCEE05B72237F06500BBB323 /* AFSession.swift */,
+				DCEE05B922380C0400BBB323 /* AFRequest.swift */,
+				DCEE05BB2238121000BBB323 /* AFResponse.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		DC9B19DD223560B500EF3EF2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DC9B19DE223560C800EF3EF2 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
 		DCD3C8222232E5D9005CC6AD = {
 			isa = PBXGroup;
 			children = (
 				DCD3C82D2232E5D9005CC6AD /* AFDownloader */,
 				DCD3C82C2232E5D9005CC6AD /* Products */,
+				DCEE05F82238E0F000BBB323 /* AFDownloader-Demo.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +90,9 @@
 		DCD3C82D2232E5D9005CC6AD /* AFDownloader */ = {
 			isa = PBXGroup;
 			children = (
-				DCD3C82E2232E5D9005CC6AD /* AFDownloader.swift */,
+				DC9B19DE223560C800EF3EF2 /* Cache */,
+				DC9B19DD223560B500EF3EF2 /* Networking */,
+				DC9B19DC223560AB00EF3EF2 /* General */,
 			);
 			path = AFDownloader;
 			sourceTree = "<group>";
@@ -120,6 +155,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCD3C82F2232E5D9005CC6AD /* AFDownloader.swift in Sources */,
+				DCEE05BC2238121000BBB323 /* AFResponse.swift in Sources */,
+				DCEE05B82237F06500BBB323 /* AFSession.swift in Sources */,
+				DCEE05BA22380C0400BBB323 /* AFRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
