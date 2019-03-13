@@ -14,7 +14,7 @@ protocol RequestDelegate {
     func cancel(request:AFRequest)
 }
 
-open class AFRequest{
+public class AFRequest{
     var fileURL:URL
     var responseData:Data?
     var responseError:Error?

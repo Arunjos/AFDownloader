@@ -11,6 +11,7 @@
 		DCEE05B82237F06500BBB323 /* AFSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE05B72237F06500BBB323 /* AFSession.swift */; };
 		DCEE05BA22380C0400BBB323 /* AFRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE05B922380C0400BBB323 /* AFRequest.swift */; };
 		DCEE05BC2238121000BBB323 /* AFResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE05BB2238121000BBB323 /* AFResponse.swift */; };
+		DCEE0608223924FE00BBB323 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE0607223924FE00BBB323 /* Cache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 		DCEE05B922380C0400BBB323 /* AFRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFRequest.swift; sourceTree = "<group>"; };
 		DCEE05BB2238121000BBB323 /* AFResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFResponse.swift; sourceTree = "<group>"; };
 		DCEE05F82238E0F000BBB323 /* AFDownloader-Demo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "AFDownloader-Demo.xcodeproj"; path = "/Users/arunjose/Documents/AFDownloader/AFDownloader-Demo/AFDownloader-Demo.xcodeproj"; sourceTree = "<absolute>"; };
+		DCEE0607223924FE00BBB323 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		DC9B19DE223560C800EF3EF2 /* Cache */ = {
 			isa = PBXGroup;
 			children = (
+				DCEE0607223924FE00BBB323 /* Cache.swift */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCD3C82F2232E5D9005CC6AD /* AFDownloader.swift in Sources */,
+				DCEE0608223924FE00BBB323 /* Cache.swift in Sources */,
 				DCEE05BC2238121000BBB323 /* AFResponse.swift in Sources */,
 				DCEE05B82237F06500BBB323 /* AFSession.swift in Sources */,
 				DCEE05BA22380C0400BBB323 /* AFRequest.swift in Sources */,

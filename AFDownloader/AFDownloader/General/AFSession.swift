@@ -8,20 +8,17 @@
 
 import Foundation
 
-open class AFSession: NSObject {
+public class AFSession: NSObject {
     public static let `default` = AFSession()
-    private var requestList = [AFRequest]()
-    private var taskToRequest = [URLSessionTask:[AFRequest]]()
-    private var taskToProcessingRequest = [URLSessionTask:[AFRequest]]()
-    
-    public override init() {
-        super.init()
-    }
+    var requestList = [AFRequest]()
+    var taskToRequest = [URLSessionTask:[AFRequest]]()
+    var taskToProcessingRequest = [URLSessionTask:[AFRequest]]()
+    var cache = Cache<Data>(capacity: 10)
     
     public func downloadFileRequest(fileURL:URL) -> AFRequest{
-        
+        let cachedData = getCachedDataFor(url: fileURL)
         let downloadTask = createDownloadTask(withURL: fileURL)
-        let request = AFRequest(url: fileURL, downloadTask: downloadTask, responseData:nil, delegate:self)
+        let request = AFRequest(url: fileURL, downloadTask: downloadTask, responseData:cachedData, delegate:self)
         if taskToRequest[downloadTask] == nil {
             taskToRequest[downloadTask] = Array<AFRequest>()
         }
@@ -29,7 +26,14 @@ open class AFSession: NSObject {
         return request
     }
     
-    public func createDownloadTask(withURL url:URL) -> URLSessionDownloadTask {
+    func getCachedDataFor(url:URL) -> Data? {
+        if let cachedData = cache.getValue(for: url.absoluteString) {
+            return cachedData
+        }
+        return nil
+    }
+    
+    func createDownloadTask(withURL url:URL) -> URLSessionDownloadTask {
         if let exisitingRequest = checkURLInRequests(fileURL: url){
             return exisitingRequest.task
         }else{
@@ -38,7 +42,7 @@ open class AFSession: NSObject {
         }
     }
     
-    public func checkURLInRequests(fileURL: URL) -> AFRequest? {
+    func checkURLInRequests(fileURL: URL) -> AFRequest? {
         for request in requestList{
             if request.fileURL == fileURL{
                 return request
@@ -47,7 +51,7 @@ open class AFSession: NSObject {
         return nil
     }
     
-    public func didFailTask(task:URLSessionTask, withError error: Error) {
+    func didFailTask(task:URLSessionTask, withError error: Error) {
         for request in taskToProcessingRequest[task] ?? []{
             request.setResponseError(errorInDownload: error)
             request.didFailTask()
@@ -58,7 +62,10 @@ open class AFSession: NSObject {
         }
     }
     
-    public func didCompleteTask(task:URLSessionTask, withData data: Data) {
+    func didCompleteTask(task:URLSessionTask, withData data: Data) {
+        if let urlString = task.currentRequest?.url?.absoluteString {
+            cache.setValue(data, for:urlString)
+        }
         for request in taskToProcessingRequest[task] ?? [] {
             request.setResponseData(downlaodedData: data)
             request.didCompleteTask()
@@ -73,7 +80,7 @@ open class AFSession: NSObject {
 
 extension AFSession:RequestDelegate{
     
-    public func start(request: AFRequest) {
+    func start(request: AFRequest) {
         if request.responseData != nil {
             request.didCompleteTask()
         } else if request.responseError != nil {
@@ -92,7 +99,7 @@ extension AFSession:RequestDelegate{
         }
     }
     
-    public func cancel(request: AFRequest) {
+    func cancel(request: AFRequest) {
         if let index = taskToProcessingRequest[request.task]?.index(where: { $0 === request }) {
             taskToProcessingRequest[request.task]?.remove(at: index)
         }
