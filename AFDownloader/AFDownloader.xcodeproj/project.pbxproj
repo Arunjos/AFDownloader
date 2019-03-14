@@ -7,12 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC12DF0F2239891A002D2C71 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC12DF0E2239891A002D2C71 /* Tests.swift */; };
+		DC12DF112239891A002D2C71 /* libAFDownloader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD3C82B2232E5D9005CC6AD /* libAFDownloader.a */; };
+		DC12DF19223991DD002D2C71 /* test_image1.png in Resources */ = {isa = PBXBuildFile; fileRef = DCEE061C223978ED00BBB323 /* test_image1.png */; };
+		DC12DF1B2239AB04002D2C71 /* test_image_large.png in Resources */ = {isa = PBXBuildFile; fileRef = DC12DF1A2239AB04002D2C71 /* test_image_large.png */; };
+		DC12DF1D223A1413002D2C71 /* test_json.json in Resources */ = {isa = PBXBuildFile; fileRef = DC12DF1C223A1413002D2C71 /* test_json.json */; };
 		DCD3C82F2232E5D9005CC6AD /* AFDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3C82E2232E5D9005CC6AD /* AFDownloader.swift */; };
 		DCEE05B82237F06500BBB323 /* AFSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE05B72237F06500BBB323 /* AFSession.swift */; };
 		DCEE05BA22380C0400BBB323 /* AFRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE05B922380C0400BBB323 /* AFRequest.swift */; };
 		DCEE05BC2238121000BBB323 /* AFResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE05BB2238121000BBB323 /* AFResponse.swift */; };
 		DCEE0608223924FE00BBB323 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE0607223924FE00BBB323 /* Cache.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC12DF122239891A002D2C71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD3C8232232E5D9005CC6AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCD3C82A2232E5D9005CC6AD;
+			remoteInfo = AFDownloader;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		DCD3C8292232E5D9005CC6AD /* CopyFiles */ = {
@@ -27,16 +42,29 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DC12DF0C2239891A002D2C71 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC12DF0E2239891A002D2C71 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		DC12DF102239891A002D2C71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC12DF1A2239AB04002D2C71 /* test_image_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_image_large.png; sourceTree = "<group>"; };
+		DC12DF1C223A1413002D2C71 /* test_json.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_json.json; sourceTree = "<group>"; };
 		DCD3C82B2232E5D9005CC6AD /* libAFDownloader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFDownloader.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD3C82E2232E5D9005CC6AD /* AFDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFDownloader.swift; sourceTree = "<group>"; };
 		DCEE05B72237F06500BBB323 /* AFSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFSession.swift; sourceTree = "<group>"; };
 		DCEE05B922380C0400BBB323 /* AFRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFRequest.swift; sourceTree = "<group>"; };
 		DCEE05BB2238121000BBB323 /* AFResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFResponse.swift; sourceTree = "<group>"; };
-		DCEE05F82238E0F000BBB323 /* AFDownloader-Demo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "AFDownloader-Demo.xcodeproj"; path = "/Users/arunjose/Documents/AFDownloader/AFDownloader-Demo/AFDownloader-Demo.xcodeproj"; sourceTree = "<absolute>"; };
 		DCEE0607223924FE00BBB323 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		DCEE061C223978ED00BBB323 /* test_image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_image1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DC12DF092239891A002D2C71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC12DF112239891A002D2C71 /* libAFDownloader.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCD3C8282232E5D9005CC6AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,6 +75,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC12DF0D2239891A002D2C71 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DC12DF0E2239891A002D2C71 /* Tests.swift */,
+				DC12DF102239891A002D2C71 /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		DC9B19DC223560AB00EF3EF2 /* General */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,9 +113,10 @@
 		DCD3C8222232E5D9005CC6AD = {
 			isa = PBXGroup;
 			children = (
+				DCEE061B223978CF00BBB323 /* ImageTests */,
 				DCD3C82D2232E5D9005CC6AD /* AFDownloader */,
+				DC12DF0D2239891A002D2C71 /* Tests */,
 				DCD3C82C2232E5D9005CC6AD /* Products */,
-				DCEE05F82238E0F000BBB323 /* AFDownloader-Demo.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				DCD3C82B2232E5D9005CC6AD /* libAFDownloader.a */,
+				DC12DF0C2239891A002D2C71 /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,9 +139,37 @@
 			path = AFDownloader;
 			sourceTree = "<group>";
 		};
+		DCEE061B223978CF00BBB323 /* ImageTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCEE061C223978ED00BBB323 /* test_image1.png */,
+				DC12DF1C223A1413002D2C71 /* test_json.json */,
+				DC12DF1A2239AB04002D2C71 /* test_image_large.png */,
+			);
+			path = ImageTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DC12DF0B2239891A002D2C71 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC12DF162239891A002D2C71 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				DC12DF082239891A002D2C71 /* Sources */,
+				DC12DF092239891A002D2C71 /* Frameworks */,
+				DC12DF0A2239891A002D2C71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC12DF132239891A002D2C71 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = DC12DF0C2239891A002D2C71 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DCD3C82A2232E5D9005CC6AD /* AFDownloader */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCD3C8322232E5D9005CC6AD /* Build configuration list for PBXNativeTarget "AFDownloader" */;
@@ -130,6 +197,9 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Arun Jose";
 				TargetAttributes = {
+					DC12DF0B2239891A002D2C71 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
 					DCD3C82A2232E5D9005CC6AD = {
 						CreatedOnToolsVersion = 9.3.1;
 					};
@@ -148,11 +218,33 @@
 			projectRoot = "";
 			targets = (
 				DCD3C82A2232E5D9005CC6AD /* AFDownloader */,
+				DC12DF0B2239891A002D2C71 /* Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		DC12DF0A2239891A002D2C71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC12DF19223991DD002D2C71 /* test_image1.png in Resources */,
+				DC12DF1D223A1413002D2C71 /* test_json.json in Resources */,
+				DC12DF1B2239AB04002D2C71 /* test_image_large.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		DC12DF082239891A002D2C71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC12DF0F2239891A002D2C71 /* Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCD3C8272232E5D9005CC6AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -167,7 +259,49 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		DC12DF132239891A002D2C71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCD3C82A2232E5D9005CC6AD /* AFDownloader */;
+			targetProxy = DC12DF122239891A002D2C71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		DC12DF142239891A002D2C71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.arun.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC12DF152239891A002D2C71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.arun.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		DCD3C8302232E5D9005CC6AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -309,6 +443,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DC12DF162239891A002D2C71 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC12DF142239891A002D2C71 /* Debug */,
+				DC12DF152239891A002D2C71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DCD3C8262232E5D9005CC6AD /* Build configuration list for PBXProject "AFDownloader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

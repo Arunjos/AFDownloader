@@ -100,13 +100,17 @@ extension AFSession:RequestDelegate{
     }
     
     func cancel(request: AFRequest) {
-        if let index = taskToProcessingRequest[request.task]?.index(where: { $0 === request }) {
-            taskToProcessingRequest[request.task]?.remove(at: index)
-        }
-        if taskToProcessingRequest[request.task]?.count == 0 && taskToRequest[request.task]?.count == 0 {
+        if taskToProcessingRequest[request.task]?.count == 1 && taskToRequest[request.task]?.count == 0 {
             request.task.cancel()
+            return
         }
-        
+        if let index = taskToProcessingRequest[request.task]?.index(where: { $0 === request }) {
+            let request = taskToProcessingRequest[request.task]?.remove(at: index)
+            if let error = (CFNetworkErrors.cfurlErrorCancelled as? Error) {
+                request?.setResponseError(errorInDownload:error)
+            }
+            request?.didFailTask()
+        }
     }
     
     

@@ -14,6 +14,10 @@ protocol RequestDelegate {
     func cancel(request:AFRequest)
 }
 
+public enum AFError: Error {
+    case wrongTypeError
+}
+
 public class AFRequest{
     var fileURL:URL
     var responseData:Data?
@@ -67,9 +71,13 @@ extension AFRequest {
         self.completionHandler = {downloadedData, error in
             
             if let data = downloadedData {
-                let image = UIImage(data:data,scale:1.0)
-                let afImageResponse = AFResponse<UIImage>(url: self.fileURL, response: image)
-                completionHandler(afImageResponse, nil)
+                if let image = UIImage(data:data,scale:1.0) {
+                    let afImageResponse = AFResponse<UIImage>(url: self.fileURL, response: image)
+                    completionHandler(afImageResponse, nil)
+                } else {
+                    let error = AFError.wrongTypeError as Error
+                    completionHandler(nil, error)
+                }
             } else {
                 completionHandler(nil, error)
             }

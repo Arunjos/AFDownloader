@@ -12,7 +12,7 @@ import Foundation
 public class Cache<ObjectType>{
     var cacheStoreList:[CacheStore] = Array<CacheStore>()
     var capacity:Int
-    struct CacheStore {
+    public struct CacheStore {
         var key:String
         var value:ObjectType
     }
