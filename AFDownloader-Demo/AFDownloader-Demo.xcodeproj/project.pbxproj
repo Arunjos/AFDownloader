@@ -20,7 +20,6 @@
 		DC0233AA223ADF4700F2C420 /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0233A9223ADF4700F2C420 /* ProfileImage.swift */; };
 		DC12DF182239917D002D2C71 /* test_image1.png in Resources */ = {isa = PBXBuildFile; fileRef = DC12DF172239917D002D2C71 /* test_image1.png */; };
 		DCEE05CB2238E0CC00BBB323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE05CA2238E0CC00BBB323 /* AppDelegate.swift */; };
-		DCEE05CD2238E0CC00BBB323 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE05CC2238E0CC00BBB323 /* ViewController.swift */; };
 		DCEE05D02238E0CD00BBB323 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCEE05CE2238E0CD00BBB323 /* Main.storyboard */; };
 		DCEE05D22238E0CF00BBB323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCEE05D12238E0CF00BBB323 /* Assets.xcassets */; };
 		DCEE05D52238E0CF00BBB323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCEE05D32238E0CF00BBB323 /* LaunchScreen.storyboard */; };
@@ -63,7 +62,6 @@
 		DC12DF172239917D002D2C71 /* test_image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test_image1.png; path = ../AFDownloader/ImageTests/test_image1.png; sourceTree = "<group>"; };
 		DCEE05C72238E0CC00BBB323 /* AFDownloader-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AFDownloader-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCEE05CA2238E0CC00BBB323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DCEE05CC2238E0CC00BBB323 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DCEE05CF2238E0CD00BBB323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCEE05D12238E0CF00BBB323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCEE05D42238E0CF00BBB323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -190,7 +188,6 @@
 				DC023393223AC85C00F2C420 /* View */,
 				DC023392223AC84400F2C420 /* Model */,
 				DCEE05CA2238E0CC00BBB323 /* AppDelegate.swift */,
-				DCEE05CC2238E0CC00BBB323 /* ViewController.swift */,
 				DCEE05CE2238E0CD00BBB323 /* Main.storyboard */,
 				DCEE05D12238E0CF00BBB323 /* Assets.xcassets */,
 				DCEE05D32238E0CF00BBB323 /* LaunchScreen.storyboard */,
@@ -401,7 +398,6 @@
 			files = (
 				DC02339B223ACEFD00F2C420 /* PostCollectionDataSource.swift in Sources */,
 				DC0233AA223ADF4700F2C420 /* ProfileImage.swift in Sources */,
-				DCEE05CD2238E0CC00BBB323 /* ViewController.swift in Sources */,
 				DC02339D223ACF4B00F2C420 /* PostCollectionDelegate.swift in Sources */,
 				DC0233A8223ADF3000F2C420 /* URL.swift in Sources */,
 				DCEE05CB2238E0CC00BBB323 /* AppDelegate.swift in Sources */,
