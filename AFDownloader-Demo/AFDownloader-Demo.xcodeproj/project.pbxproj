@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		92689D9CDDBF75B805245F1F /* Pods_AFDownloader_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8D1CDEC953B6C079F0B077 /* Pods_AFDownloader_Demo.framework */; };
+		DC023396223AC88D00F2C420 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC023395223AC88D00F2C420 /* HomeViewController.swift */; };
+		DC023399223AC95200F2C420 /* PostLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC023398223AC95200F2C420 /* PostLayout.swift */; };
+		DC02339B223ACEFD00F2C420 /* PostCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC02339A223ACEFD00F2C420 /* PostCollectionDataSource.swift */; };
+		DC02339D223ACF4B00F2C420 /* PostCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC02339C223ACF4B00F2C420 /* PostCollectionDelegate.swift */; };
+		DC0233A0223AD05700F2C420 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC02339F223AD05700F2C420 /* PostCollectionViewCell.swift */; };
+		DC0233A2223AD21B00F2C420 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0233A1223AD21B00F2C420 /* Constants.swift */; };
+		DC0233A4223AD70E00F2C420 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0233A3223AD70E00F2C420 /* Post.swift */; };
+		DC0233A6223ADF2000F2C420 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0233A5223ADF2000F2C420 /* User.swift */; };
+		DC0233A8223ADF3000F2C420 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0233A7223ADF3000F2C420 /* URL.swift */; };
+		DC0233AA223ADF4700F2C420 /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0233A9223ADF4700F2C420 /* ProfileImage.swift */; };
 		DC12DF182239917D002D2C71 /* test_image1.png in Resources */ = {isa = PBXBuildFile; fileRef = DC12DF172239917D002D2C71 /* test_image1.png */; };
 		DCEE05CB2238E0CC00BBB323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE05CA2238E0CC00BBB323 /* AppDelegate.swift */; };
 		DCEE05CD2238E0CC00BBB323 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE05CC2238E0CC00BBB323 /* ViewController.swift */; };
@@ -40,6 +50,16 @@
 		3A8D1CDEC953B6C079F0B077 /* Pods_AFDownloader_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AFDownloader_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63294DEF4E7A3C37DFC4E0C9 /* Pods-AFDownloader-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFDownloader-Demo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-AFDownloader-Demo/Pods-AFDownloader-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		8DCD6A528A5E6B25C4DA01FA /* Pods-AFDownloader-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFDownloader-Demo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-AFDownloader-Demo/Pods-AFDownloader-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		DC023395223AC88D00F2C420 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DC023398223AC95200F2C420 /* PostLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLayout.swift; sourceTree = "<group>"; };
+		DC02339A223ACEFD00F2C420 /* PostCollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionDataSource.swift; sourceTree = "<group>"; };
+		DC02339C223ACF4B00F2C420 /* PostCollectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionDelegate.swift; sourceTree = "<group>"; };
+		DC02339F223AD05700F2C420 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		DC0233A1223AD21B00F2C420 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DC0233A3223AD70E00F2C420 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		DC0233A5223ADF2000F2C420 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DC0233A7223ADF3000F2C420 /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		DC0233A9223ADF4700F2C420 /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
 		DC12DF172239917D002D2C71 /* test_image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test_image1.png; path = ../AFDownloader/ImageTests/test_image1.png; sourceTree = "<group>"; };
 		DCEE05C72238E0CC00BBB323 /* AFDownloader-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AFDownloader-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCEE05CA2238E0CC00BBB323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +113,53 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DC023392223AC84400F2C420 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC0233A1223AD21B00F2C420 /* Constants.swift */,
+				DC0233A3223AD70E00F2C420 /* Post.swift */,
+				DC0233A5223ADF2000F2C420 /* User.swift */,
+				DC0233A7223ADF3000F2C420 /* URL.swift */,
+				DC0233A9223ADF4700F2C420 /* ProfileImage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DC023393223AC85C00F2C420 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC02339E223AD02000F2C420 /* PostCollectionCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC023394223AC86900F2C420 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DC023397223AC91200F2C420 /* CustomLayout */,
+				DC023395223AC88D00F2C420 /* HomeViewController.swift */,
+				DC02339A223ACEFD00F2C420 /* PostCollectionDataSource.swift */,
+				DC02339C223ACF4B00F2C420 /* PostCollectionDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DC023397223AC91200F2C420 /* CustomLayout */ = {
+			isa = PBXGroup;
+			children = (
+				DC023398223AC95200F2C420 /* PostLayout.swift */,
+			);
+			path = CustomLayout;
+			sourceTree = "<group>";
+		};
+		DC02339E223AD02000F2C420 /* PostCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				DC02339F223AD05700F2C420 /* PostCollectionViewCell.swift */,
+			);
+			path = PostCollectionCell;
+			sourceTree = "<group>";
+		};
 		DCEE05BE2238E0CC00BBB323 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +186,9 @@
 		DCEE05C92238E0CC00BBB323 /* AFDownloader-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				DC023394223AC86900F2C420 /* Controller */,
+				DC023393223AC85C00F2C420 /* View */,
+				DC023392223AC84400F2C420 /* Model */,
 				DCEE05CA2238E0CC00BBB323 /* AppDelegate.swift */,
 				DCEE05CC2238E0CC00BBB323 /* ViewController.swift */,
 				DCEE05CE2238E0CD00BBB323 /* Main.storyboard */,
@@ -329,8 +399,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC02339B223ACEFD00F2C420 /* PostCollectionDataSource.swift in Sources */,
+				DC0233AA223ADF4700F2C420 /* ProfileImage.swift in Sources */,
 				DCEE05CD2238E0CC00BBB323 /* ViewController.swift in Sources */,
+				DC02339D223ACF4B00F2C420 /* PostCollectionDelegate.swift in Sources */,
+				DC0233A8223ADF3000F2C420 /* URL.swift in Sources */,
 				DCEE05CB2238E0CC00BBB323 /* AppDelegate.swift in Sources */,
+				DC023396223AC88D00F2C420 /* HomeViewController.swift in Sources */,
+				DC0233A0223AD05700F2C420 /* PostCollectionViewCell.swift in Sources */,
+				DC0233A4223AD70E00F2C420 /* Post.swift in Sources */,
+				DC023399223AC95200F2C420 /* PostLayout.swift in Sources */,
+				DC0233A6223ADF2000F2C420 /* User.swift in Sources */,
+				DC0233A2223AD21B00F2C420 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
